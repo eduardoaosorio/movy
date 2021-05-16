@@ -22,7 +22,7 @@ body {
   background: url(../images/background.png);
   background-size: cover;
   background-position: top;
-  min-height: 80vh; }
+  min-height: 100vh; }
 
 .header {
   font-size: 1.5rem;
@@ -61,7 +61,7 @@ a:visited {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  margin: 2rem 0 4rem 0; }
+  margin: 4rem 0 8rem 0; }
   .login-form__heading {
     font-size: 3.5rem;
     text-align: center;
@@ -106,4 +106,17 @@ a:visited {
       font-weight: 600; }
 
 .footer {
-  background-color: #000; }
+  background-color: #000;
+  box-shadow: -20rem 0 10rem #000;
+  padding: 4rem 15rem; }
+  .footer address {
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 3rem; }
+  .footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+    .footer ul li {
+      padding: 1rem 0;
+      flex: 0 0 25%; }
