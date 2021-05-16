@@ -12,6 +12,7 @@ body {
   box-sizing: border-box;
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
+  color: #fff;
 }
 
 *,
@@ -23,28 +24,24 @@ body {
 }
 
 .container {
-  width: 100%;
   background: url(../images/background.png);
   background-size: cover;
   background-position: top;
 
-  min-height: 80rem;
+  min-height: 80vh; //temp
 }
 
 .header {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding-top: 3rem;
+  padding: 3rem 7rem;
 
   &__logo {
-    margin-left: 5rem;
     height: 4rem;
   }
 
-  &__nav-box,
   a:first-of-type {
     margin-right: 5rem;
   }
@@ -60,5 +57,93 @@ a:visited {
 .btn {
   background-color: var(--color-primary);
   padding: 1rem 5rem;
-  border-radius: 7px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  min-width: 25%;
+  background-color: rgba(#000000, 0.85);
+  font-size: 1.5rem;
+  padding: 4rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 4rem 0;
+
+  &__heading {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 600;
+  }
+  &__email,
+  &__password {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+  }
+
+  &__email {
+    margin-bottom: 1.5rem;
+  }
+
+  &__password {
+    margin-bottom: 4rem;
+  }
+
+  button {
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+
+  &__help-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+
+    label {
+      display: flex;
+      align-items: center;
+
+      input {
+        margin-right: 1.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__fb-login-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    align-self: center;
+    font-size: 1.2rem;
+  }
+
+  &__fb-logo {
+    height: 2rem;
+    margin-right: 0.7rem;
+  }
+
+  &__subscribe-link {
+    font-size: 1.2rem;
+    align-self: center;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.footer {
+  background-color: #000;
 }

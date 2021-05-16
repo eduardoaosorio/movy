@@ -21,13 +21,19 @@
         <section class="login-section">
             <form action="#" class="login-form">
                 <h1 class="login-form__heading">Inicia sesión</h1>
-                <input class="login-form__text-input" type="email" name="email" id="email">
-                <input class="login-form__text-input" type="password" name="password" id="password">
-                <button class="login-form__submit-btn">Iniciar sesión</button>
-                <input type="checkbox" name="remember" id="remember">
-                <label for="remember">Recuérdame</label>
-                <a href="#">Necesitas ayuda?</a>
-                <div class="login-form__fb-login">
+                <input class="login-form__email" type="text" name="email" id="email"
+                    placeholder="Email o número de teléfono">
+                <input class="login-form__password" type="password" name="password" id="password"
+                    placeholder="Contraseña">
+                <button class="btn">Iniciar sesión</button>
+                <div class="login-form__help-box">
+                    <label for="remember">
+                        <input type="checkbox" name="remember" id="remember">
+                        Recuérdame
+                    </label>
+                    <a href="#">Necesitas ayuda?</a>
+                </div>
+                <div class="login-form__fb-login-box">
                     <img src="./images/fb_logo.png" alt="Facebook logo" class="login-form__fb-logo">
                     <a href="#">Iniciar sesión con Facebook</a>
                 </div>

@@ -8,7 +8,8 @@ html {
 body {
   box-sizing: border-box;
   font-size: 1.6rem;
-  font-family: "Inter", sans-serif; }
+  font-family: "Inter", sans-serif;
+  color: #fff; }
 
 *,
 *::before,
@@ -18,22 +19,19 @@ body {
   padding: 0; }
 
 .container {
-  width: 100%;
   background: url(../images/background.png);
   background-size: cover;
   background-position: top;
-  min-height: 80rem; }
+  min-height: 80vh; }
 
 .header {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 3rem; }
+  padding: 3rem 7rem; }
   .header__logo {
-    margin-left: 5rem;
     height: 4rem; }
-  .header__nav-box,
   .header a:first-of-type {
     margin-right: 5rem; }
 
@@ -46,4 +44,66 @@ a:visited {
 .btn {
   background-color: var(--color-primary);
   padding: 1rem 5rem;
-  border-radius: 7px; }
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer; }
+
+.login-section {
+  display: flex;
+  justify-content: center; }
+
+.login-form {
+  min-width: 25%;
+  background-color: rgba(0, 0, 0, 0.85);
+  font-size: 1.5rem;
+  padding: 4rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 4rem 0; }
+  .login-form__heading {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 600; }
+  .login-form__email, .login-form__password {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 4px; }
+  .login-form__email {
+    margin-bottom: 1.5rem; }
+  .login-form__password {
+    margin-bottom: 4rem; }
+  .login-form button {
+    font-weight: 600;
+    margin-bottom: 1.2rem; }
+  .login-form__help-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    font-size: 1.2rem; }
+    .login-form__help-box label {
+      display: flex;
+      align-items: center; }
+      .login-form__help-box label input {
+        margin-right: 1.5rem;
+        cursor: pointer; }
+  .login-form__fb-login-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    align-self: center;
+    font-size: 1.2rem; }
+  .login-form__fb-logo {
+    height: 2rem;
+    margin-right: 0.7rem; }
+  .login-form__subscribe-link {
+    font-size: 1.2rem;
+    align-self: center; }
+    .login-form__subscribe-link span {
+      font-weight: 600; }
+
+.footer {
+  background-color: #000; }
