@@ -14,6 +14,7 @@ body {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
   color: #fff;
+  background-color: #000;
 }
 
 *,
@@ -28,7 +29,7 @@ body {
   background: url(../images/background.png);
   background-size: cover;
   background-position: top;
-  min-height: 100vh;
+  // min-height: 100vh;
 }
 
 .header {
@@ -99,6 +100,11 @@ a:visited {
     margin-bottom: 4rem;
   }
 
+  input,
+  button {
+    font-size: inherit;
+  }
+
   button {
     font-weight: 600;
     margin-bottom: 1.2rem;
@@ -165,6 +171,50 @@ a:visited {
     li {
       padding: 1rem 0;
       flex: 0 0 25%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+
+  .login-form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+
+  .login-form {
+    width: 60%;
+  }
+
+  .footer {
+    ul {
+      li {
+        flex: 0 0 33%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .login-form {
+    width: 90%;
+  }
+
+  .footer {
+    padding: 4rem 8rem;
+
+    ul {
+      li {
+        flex: 0 0 50%;
+      }
     }
   }
 }
