@@ -29,11 +29,9 @@ body {
   background: url(../images/background.png);
   background-size: cover;
   background-position: top;
-  // min-height: 100vh;
 }
 
 .header {
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,7 +70,7 @@ a:visited {
 .login-form {
   min-width: 25%;
   background-color: rgba(#000000, 0.85);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding: 4rem;
   border-radius: var(--border-radius);
   display: flex;
@@ -115,7 +113,6 @@ a:visited {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 4rem;
-    font-size: 1.2rem;
 
     label {
       display: flex;
@@ -130,7 +127,6 @@ a:visited {
 
   &__fb-login-box,
   &__subscribe-link {
-    font-size: 1.2rem;
     align-self: center;
   }
 
@@ -177,17 +173,17 @@ a:visited {
 
 @media screen and (max-width: 1024px) {
   html {
-    font-size: 50%;
+    font-size: 58%;
   }
 
   .login-form {
-    width: 50%;
+    width: 54%;
   }
 }
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 40%;
+    font-size: 50%;
   }
 
   .login-form {
@@ -204,8 +200,20 @@ a:visited {
 }
 
 @media screen and (max-width: 554px) {
+  .header {
+    padding: 3rem 4.5rem;
+
+    a:first-of-type {
+      margin-right: 3rem;
+    }
+  }
+
   .login-form {
     width: 90%;
+
+    button {
+      margin-bottom: 3.5rem;
+    }
   }
 
   .footer {
