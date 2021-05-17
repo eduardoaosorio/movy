@@ -1,45 +1,54 @@
 @import url("https://rsms.me/inter/inter.css");
 :root {
   --color-primary: #0578ff;
-  --border-radius: 4px; }
+  --border-radius: 4px;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   box-sizing: border-box;
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
   color: #fff;
-  background-color: #000; }
+  background-color: #000;
+}
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .container {
   background: url(../images/background.png);
   background-size: cover;
-  background-position: top; }
+  background-position: top;
+}
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 7rem; }
-  .header__logo {
-    height: 4rem; }
-  .header a:first-of-type {
-    margin-right: 5rem; }
+  padding: 3rem 7rem;
+}
+.header__logo {
+  height: 4rem;
+}
+.header a:first-of-type {
+  margin-right: 5rem;
+}
 
 a,
 a:link,
 a:visited {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .btn {
   background-color: var(--color-primary);
@@ -47,11 +56,13 @@ a:visited {
   border-radius: var(--border-radius);
   color: #fff;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .login-section {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .login-form {
   min-width: 25%;
@@ -61,89 +72,123 @@ a:visited {
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
-  margin: 4rem 0 8rem 0; }
-  .login-form__heading {
-    font-size: 3.5rem;
-    text-align: center;
-    margin-bottom: 4rem;
-    font-weight: 600; }
-  .login-form__email, .login-form__password {
-    padding: 1rem 1.5rem;
-    border: none;
-    border-radius: var(--border-radius); }
-  .login-form__email {
-    margin-bottom: 1.5rem; }
-  .login-form__password {
-    margin-bottom: 4rem; }
-  .login-form input,
-  .login-form button {
-    font-size: inherit; }
-  .login-form button {
-    font-weight: 600;
-    margin-bottom: 1.2rem; }
-  .login-form__help-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 4rem; }
-    .login-form__help-box label {
-      display: flex;
-      align-items: center; }
-      .login-form__help-box label input {
-        margin-right: 1.5rem;
-        cursor: pointer; }
-  .login-form__fb-login-box, .login-form__subscribe-link {
-    align-self: center; }
-  .login-form__fb-login-box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4rem; }
-  .login-form__fb-logo {
-    height: 2rem;
-    margin-right: 0.7rem; }
-  .login-form__subscribe-link span {
-    font-weight: 600; }
+  margin: 4rem 0 8rem 0;
+}
+.login-form__heading {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 600;
+}
+.login-form__email,
+.login-form__password {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+}
+.login-form__email {
+  margin-bottom: 1.5rem;
+}
+.login-form__password {
+  margin-bottom: 4rem;
+}
+.login-form input,
+.login-form button {
+  font-size: inherit;
+}
+.login-form button {
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.login-form__help-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.login-form__help-box label {
+  display: flex;
+  align-items: center;
+}
+.login-form__help-box label input {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+.login-form__fb-login-box,
+.login-form__subscribe-link {
+  align-self: center;
+}
+.login-form__fb-login-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.login-form__fb-logo {
+  height: 2rem;
+  margin-right: 0.7rem;
+}
+.login-form__subscribe-link span {
+  font-weight: 600;
+}
 
 .footer {
   background-color: #000;
   box-shadow: -20rem 0 10rem #000;
-  padding: 4rem 15rem; }
-  .footer address {
-    font-style: normal;
-    font-size: 2rem;
-    margin-bottom: 3rem; }
-  .footer ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap; }
-    .footer ul li {
-      padding: 1rem 0;
-      flex: 0 0 25%; }
+  padding: 4rem 15rem;
+}
+.footer address {
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer ul li {
+  padding: 1rem 0;
+  flex: 0 0 25%;
+}
 
 @media screen and (max-width: 1024px) {
   html {
-    font-size: 58%; }
+    font-size: 58%;
+  }
   .login-form {
-    width: 54%; } }
+    width: 54%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 50%; }
+    font-size: 50%;
+  }
   .login-form {
-    width: 60%; }
+    width: 60%;
+  }
   .footer ul li {
-    flex: 0 0 33%; } }
+    flex: 0 0 33%;
+  }
+}
 
 @media screen and (max-width: 554px) {
   .header {
-    padding: 3rem 4.5rem; }
-    .header a:first-of-type {
-      margin-right: 3rem; }
+    padding: 3rem 4.5rem;
+  }
+  .header a:first-of-type {
+    margin-right: 3rem;
+  }
   .login-form {
-    width: 90%; }
-    .login-form button {
-      margin-bottom: 3.5rem; }
+    width: 90%;
+  }
+  .login-form button {
+    margin-bottom: 3.5rem;
+  }
   .footer {
-    padding: 4rem 8rem; }
-    .footer ul li {
-      flex: 0 0 50%; } }
+    padding: 4rem 8rem;
+  }
+  .footer ul li {
+    flex: 0 0 50%;
+  }
+}
