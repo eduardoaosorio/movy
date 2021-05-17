@@ -2,6 +2,7 @@
 
 :root {
   --color-primary: #0578ff;
+  --border-radius: 4px;
 }
 
 html {
@@ -56,7 +57,7 @@ a:visited {
 .btn {
   background-color: var(--color-primary);
   padding: 1rem 5rem;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   color: #fff;
   border: none;
   cursor: pointer;
@@ -72,7 +73,7 @@ a:visited {
   background-color: rgba(#000000, 0.85);
   font-size: 1.5rem;
   padding: 4rem;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   margin: 4rem 0 8rem 0;
@@ -87,7 +88,7 @@ a:visited {
   &__password {
     padding: 1rem 1.5rem;
     border: none;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
   }
 
   &__email {
@@ -121,12 +122,16 @@ a:visited {
     }
   }
 
+  &__fb-login-box,
+  &__subscribe-link {
+    font-size: 1.2rem;
+    align-self: center;
+  }
+
   &__fb-login-box {
     display: flex;
     align-items: center;
     margin-bottom: 4rem;
-    align-self: center;
-    font-size: 1.2rem;
   }
 
   &__fb-logo {
@@ -135,8 +140,6 @@ a:visited {
   }
 
   &__subscribe-link {
-    font-size: 1.2rem;
-    align-self: center;
     span {
       font-weight: 600;
     }

@@ -1,6 +1,7 @@
 @import url("https://rsms.me/inter/inter.css");
 :root {
-  --color-primary: #0578ff; }
+  --color-primary: #0578ff;
+  --border-radius: 4px; }
 
 html {
   font-size: 62.5%; }
@@ -44,7 +45,7 @@ a:visited {
 .btn {
   background-color: var(--color-primary);
   padding: 1rem 5rem;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   color: #fff;
   border: none;
   cursor: pointer; }
@@ -58,7 +59,7 @@ a:visited {
   background-color: rgba(0, 0, 0, 0.85);
   font-size: 1.5rem;
   padding: 4rem;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   margin: 4rem 0 8rem 0; }
@@ -70,7 +71,7 @@ a:visited {
   .login-form__email, .login-form__password {
     padding: 1rem 1.5rem;
     border: none;
-    border-radius: 4px; }
+    border-radius: var(--border-radius); }
   .login-form__email {
     margin-bottom: 1.5rem; }
   .login-form__password {
@@ -90,20 +91,18 @@ a:visited {
       .login-form__help-box label input {
         margin-right: 1.5rem;
         cursor: pointer; }
+  .login-form__fb-login-box, .login-form__subscribe-link {
+    font-size: 1.2rem;
+    align-self: center; }
   .login-form__fb-login-box {
     display: flex;
     align-items: center;
-    margin-bottom: 4rem;
-    align-self: center;
-    font-size: 1.2rem; }
+    margin-bottom: 4rem; }
   .login-form__fb-logo {
     height: 2rem;
     margin-right: 0.7rem; }
-  .login-form__subscribe-link {
-    font-size: 1.2rem;
-    align-self: center; }
-    .login-form__subscribe-link span {
-      font-weight: 600; }
+  .login-form__subscribe-link span {
+    font-weight: 600; }
 
 .footer {
   background-color: #000;
